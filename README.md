@@ -3,7 +3,7 @@
 koo是表单初始化与验证控件，通过标签koo属性值初始化数据和验证
 
 * 版本：1.0
-* 作者：zhongzhi,zizhu
+* 作者：子竹,仲直
 * 标签：
 * demo：[http://gallery.kissyui.com/koo/1.0/demo/index.html](http://gallery.kissyui.com/koo/1.0/demo/index.html)
 
