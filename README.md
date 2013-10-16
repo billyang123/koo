@@ -3,14 +3,14 @@
 koo是表单初始化与验证控件，通过标签koo属性值初始化数据和验证
 
 * 版本：1.0
-* 作者：子竹,仲直
+* 作者：仲直,子竹
 * 标签：
 * demo：[http://gallery.kissyui.com/koo/1.0/demo/index.html](http://gallery.kissyui.com/koo/1.0/demo/index.html)
 
 ## 初始化组件
 javascript
 
-    KISSY.use('gallery/koo/1.0/index',function(S, Koo, Cal, _){
+    KISSY.use('gallery/koo/1.0/index',function(S, Koo){
           Koo.init("#J_bnsHandle");
           //也可以Koo.init({target:"#J_bnsHandle", callback:void 0});
     });
