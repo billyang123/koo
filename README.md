@@ -216,7 +216,7 @@ config, callback, addValidation, Calendar, calConfig
 ##### 6,控件标签(日历)
 koo="date",需要引入日历组件
 
-    KISSY.use('gallery/calendar/1.2/index,calendar/assets/dpl.css',function(S, Cal, _){
+    KISSY.use('calendar,calendar/assets/dpl.css',function(S, Cal, _){
         //code           
     });
             
