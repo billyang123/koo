@@ -3,7 +3,7 @@
  * @author zhongzhi,zizhu<wb-yangbinbin@taobao.com>
  * @module koo
  **/
-KISSY.add("gallery/koo/1.0/index", function(S, Node, MenuButton) {
+KISSY.add(function(S, Node, MenuButton) {
   var $, KooForm, calendar, editor, getParam, holderSupport, instance, kooId, one, result, saving, showdate, validateField, _addValidation, _calConfig;
   $ = Node.all;
   one = Node.one;
