@@ -3,14 +3,14 @@
 koo是表单初始化与验证控件，通过标签koo属性值初始化数据和验证
 
 * 版本：1.0
-* 作者：zhongzhi,zizhu
+* 作者：仲直,子竹
 * 标签：
 * demo：[http://gallery.kissyui.com/koo/1.0/demo/index.html](http://gallery.kissyui.com/koo/1.0/demo/index.html)
 
 ## 初始化组件
 javascript
 
-    KISSY.use('gallery/koo/1.0/index',function(S, Koo, Cal, _){
+    KISSY.use('gallery/koo/1.0/index',function(S, Koo){
           Koo.init("#J_bnsHandle");
           //也可以Koo.init({target:"#J_bnsHandle", callback:void 0});
     });
@@ -216,7 +216,7 @@ config, callback, addValidation, Calendar, calConfig
 ##### 6,控件标签(日历)
 koo="date",需要引入日历组件
 
-    KISSY.use('gallery/calendar/1.2/index,calendar/assets/dpl.css',function(S, Cal, _){
+    KISSY.use('calendar,calendar/assets/dpl.css',function(S, Cal, _){
         //code           
     });
             
