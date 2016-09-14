@@ -1,9 +1,15 @@
+/*
+combined files : 
+
+kg/koo/2.0.0/index
+
+*/
 /**
  * @fileoverview 
  * @author zhongzhi,zizhu<wb-yangbinbin@taobao.com>
  * @module koo
  **/
-KISSY.add(function(S, Node, MenuButton) {
+KISSY.add('kg/koo/2.0.0/index',function(S, Node, MenuButton) {
   var $, KooForm, calendar, editor, getParam, holderSupport, instance, kooId, one, result, saving, showdate, validateField, _addValidation, _calConfig;
   $ = Node.all;
   one = Node.one;
@@ -11,7 +17,7 @@ KISSY.add(function(S, Node, MenuButton) {
   if (!!S.UA.ie && S.UA.ie < 9) {
     holderSupport = false;
   }
-  kooId = parseInt(Math.random() * 100000);
+  kooId = parseInt(Math.random() * 2.0.0000);
   saving = false;
   _addValidation = null;
   calendar = null;
@@ -235,7 +241,6 @@ KISSY.add(function(S, Node, MenuButton) {
   instance.prototype.bindArea = function() {
     var elems, i, rich, temp, _el, _i, _ref, _results;
     elems = $("textarea", this.form);
-
     _results = [];
     for (i = _i = 0, _ref = elems.length; 0 <= _ref ? _i < _ref : _i > _ref; i = 0 <= _ref ? ++_i : --_i) {
       _el = $(elems[i]);
@@ -256,8 +261,7 @@ KISSY.add(function(S, Node, MenuButton) {
         _results.push(_el.on("focusout", function(e) {
           var check, obj;
           obj = one(e.currentTarget);
-          //modified by bocai  点击textarea dom引用错误的bug
-          check = getParam(obj);
+          check = getParam(_el);
           if (!check || check.length < 1) {
             return;
           }
@@ -272,7 +276,6 @@ KISSY.add(function(S, Node, MenuButton) {
   getParam = function(target) {
     var template_id;
     template_id = $(target).attr("koo");
-
     if (!!template_id) {
       return template_id.split("-");
     }
@@ -293,7 +296,6 @@ KISSY.add(function(S, Node, MenuButton) {
         tp_flag = temp[i].substr(1, temp[i].length - 1);
       }
       ime = false;
-      // console.log(tp_flag)
       switch (tp_flag) {
         case "need":
           if (S.trim(val) !== val) {
@@ -383,7 +385,6 @@ KISSY.add(function(S, Node, MenuButton) {
           break;
         default:
           sinbo_id09323 = tp_flag.substr(1, tp_flag.length - 1).replace("$", "-");
-
           switch (tp_flag.charAt(0)) {
             case "l":
               st0911 = parseInt(tp_flag.substr(1), 10);
@@ -529,6 +530,7 @@ KISSY.add(function(S, Node, MenuButton) {
 }, {
   requires: ["node", "menubutton"]
 });
+
 
 
 
